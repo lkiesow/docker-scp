@@ -1,0 +1,17 @@
+#HostKey /etc/ssh/ssh_host_ed25519_key
+
+# Authentication:
+PermitRootLogin no
+AuthorizedKeysFile	/etc/ssh/authorized_keys
+PubkeyAuthentication yes
+PasswordAuthentication no
+PermitEmptyPasswords no
+AllowAgentForwarding no
+AllowTcpForwarding no
+X11Forwarding no
+PermitTTY no
+PermitTunnel no
+PrintMotd yes
+
+# override default of no subsystems
+Subsystem	sftp	/usr/lib/ssh/sftp-server

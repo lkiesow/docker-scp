@@ -2,7 +2,7 @@
 
 # Authentication:
 PermitRootLogin no
-AuthorizedKeysFile	/etc/ssh/authorized_keys
+AuthorizedKeysFile /etc/ssh/authorized_keys/%u
 PubkeyAuthentication yes
 PasswordAuthentication no
 PermitEmptyPasswords no

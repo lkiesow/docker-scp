@@ -36,7 +36,8 @@ cp id_ed2551.pub /path/on/host/config/user1
 docker run -it \
   -p 2222:22 \
   --name=deploy \
-  -v /path/on/host/config:/conf \
+  -v /config/dir/on/host:/conf \
+  -v /data/dir/on/host:/data \
   quay.io/lkiesow/docker-scp
 …
 scp -i id_ed25519 file.xy deploy@172...:~

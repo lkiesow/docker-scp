@@ -1,6 +1,9 @@
 Docker SCP
 ==========
 
+[![Quay build status](https://quay.io/repository/lkiesow/docker-scp/status)
+](https://quay.io/repository/lkiesow/docker-scp?tab=builds)
+
 Docker container with OpenSSH and restricted shell via rssh to be used for
 deploying files via scp.
 

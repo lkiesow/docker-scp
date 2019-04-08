@@ -13,5 +13,9 @@ PermitTTY no
 PermitTunnel no
 PrintMotd yes
 
+# algorithms
+KexAlgorithms -diffie-hellman-group1*
+MACs -umac-64*,hmac-sha1*
+
 # override default of no subsystems
 Subsystem	sftp	/usr/lib/ssh/sftp-server

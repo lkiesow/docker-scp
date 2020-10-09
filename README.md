@@ -37,7 +37,7 @@ ssh-keygen -t ed25519 -N '' -f id_ed2551
 cp id_ed2551.pub /path/on/host/config/user1
 …
 docker run -it \
-  -p 2222:22 \
+  -p '2222:22' \
   --name=deploy \
   -v /config/dir/on/host:/conf \
   -v /data/dir/on/host:/data \
